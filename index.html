@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Camunda Client demo</title>
+    <link href="css/styles.css" />
+    <link href="bower_components/visualsearch/build/visualsearch.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <ul class="inline-list">
+      <li><a href="#">Home</a></li>
+      <li><a href="#tasks">List</a></li>
+    </ul>
+
+    <div class="search">
+    </div>
+    <div class="results">
+    </div>
+
+    <script type="text/javascript" src="bower_components/requirejs/require.js"></script>
+    <script type="text/javascript">
+require.config({
+  baseUrl: 'src',
+  paths: {
+    'camunda-client': 'app',
+    backbone: '../bower_components/backbone/backbone',
+    jquery: '../bower_components/jquery/jquery',
+    underscore: '../bower_components/underscore/underscore',
+    visualsearch: '../bower_components/visualsearch/build/visualsearch',
+    'backbone-pageable': '../bower_components/backbone-pageable/lib/backbone-pageable'
+  },
+  shim: {
+    backbone: {
+      exports: 'Backbone',
+      deps: ['jquery', 'underscore']
+    },
+    'backbone-pageable': {
+      exports: 'Backbone.PageableCollection',
+      deps: ['backbone']
+    },
+    visualsearch: {
+      exports: 'VS',
+      deps: ['backbone']
+    },
+    jquery: {
+      exports: 'jQuery'
+    },
+    underscore: {
+      exports: '_'
+    },
+    'camunda-client': {
+      deps: ['visualsearch']
+    }
+  }
+});
+require(['camunda-client'], function(CamundaClient) {
+  var client = new CamundaClient({
+
+  });
+
+  Backbone.history.start({
+    pushState: false
+  });
+});
+    </script>
+  </body>
+</html>

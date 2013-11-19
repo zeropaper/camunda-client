@@ -1,0 +1,27 @@
+{
+  "name": "camunda",
+  "version": "0.0.1",
+  "authors": [
+    "Valentin Vago <zeropaper@irata.ch>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.1.0",
+    "bower": "*",
+    "underscore": "~1.5.2",
+    "backbone-pageable": "~1.4.1",
+    "visualsearch": "~0.4.0",
+    "jquery": "1.9",
+    "handlebars": "~1.1.2",
+    "foundation": "~4.3.2",
+    "requirejs": "~2.1.9"
+  }
+}

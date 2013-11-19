@@ -1,0 +1,32 @@
+{
+  "name": "camunda",
+  "version": "0.0.1",
+  "description": "camunda rest demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "camunda",
+    "bpm",
+    "backbone",
+    "requirejs"
+  ],
+  "author": "vale",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-compass": "~0.6.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-requirejs": "~0.4.1",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.6.2",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-jshint": "~0.6.5",
+    "grunt-contrib": "~0.8.0",
+    "matchdep": "~0.3.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}
